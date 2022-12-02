@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sign Up</title>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="h-20 bg-violet-400 flex justify-between">
+        <div class="flex items-center pl-4">
+            <h1 class="text-white text-3xl">Laundry Management System</h1>
+        </div>
+        <div class="flex items-center pr-4">
+            <h2 class="text-white text-lg">About</h2>
+        </div>
+    </header>
+    <main class="flex justify-center">
+        <div class="my-10 bg-gray-200 rounded-xl">
+            <form class="grid gap-6 grid-cols-1 px-4 py-2">
+                <div class="flex justify-center bg-violet-500 rounded-xl">
+                    <h2 class="text-white text-xl py-4 font-semibold">SignUp</h2>
+                </div>
+                <div class="flex justify-between">
+                    <label class="px-4 py-2" for="name">Name</label>
+                    <input
+                        class="border border-violet-300 focus:border-violet-800 focus:outline-none px-2 py-1 rounded-md"
+                        id="name" type="text">
+                </div>
+                <div class="flex justify-between">
+                    <label class="px-4 py-2" for="email">Email</label>
+                    <input
+                        class="border border-violet-300 focus:border-violet-800 focus:outline-none px-2 py-1 rounded-md"
+                        id="email" type="text">
+                </div>
+                <div class="flex justify-between">
+                    <label class="px-4 py-2" for="phone">Phone No.</label>
+                    <input
+                        class="border border-violet-300 focus:border-violet-800 focus:outline-none px-2 py-1 rounded-md"
+                        id="phone" type="number">
+                </div>
+                <div class="flex justify-between">
+                    <label class="px-4 py-2" for="phone">Address</label>
+                    <textarea rows="4" cols="22.8" style="resize: none;"
+                        class="border border-violet-300 focus:border-violet-800 focus:outline-none px-2 py-1 rounded-md"
+                        id="phone" type="number" placeholder=" "></textarea>
+                </div>
+                <div class="flex justify-between">
+                    <label class="px-4 py-2" for="password">Password</label>
+                    <input
+                        class="border border-violet-300 focus:border-violet-800 focus:outline-none px-2 py-1 rounded-md"
+                        id="password" type="text">
+                </div>
+                <div class="flex justify-center pt-4">
+                    <button class="bg-gray-400 px-4 py-2 text-white rounded-full hover:bg-violet-500">Submit</button>
+                </div>
+                <div class="flex justify-center">
+                    <p>Already have an account? <a href="login.html" class="text-blue-500 underline">login here!</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
